@@ -134,7 +134,7 @@
     }
 
     if (filtered.length === 0) {
-      els.templateList.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:30px;">没有找到匹配的模板 🙈</div>`;
+      els.templateList.innerHTML = `<div style="grid-column:1/-1;text-align:center;color:var(--text-muted);padding:30px;">没有找到匹配的模板</div>`;
       return;
     }
 
@@ -184,7 +184,7 @@
 
     if (state.selectedTemplates.size === 0) {
       els.selectedTags.innerHTML =
-        '<span style="color:var(--text-muted);font-size:0.85rem;">还没选模板，快去左边点选吧 👈</span>';
+        '<span style="color:var(--text-muted);font-size:0.85rem;">还没选模板，快去左边点选吧</span>';
       return;
     }
 
@@ -286,7 +286,7 @@
     // 渲染解释
     if (uniqueExplanations.length > 0) {
       els.explanation.innerHTML = `
-        <h3>🔍 逐行解释（${uniqueExplanations.length} 条）</h3>
+        <h3>逐行解释（${uniqueExplanations.length} 条）</h3>
         ${uniqueExplanations
           .map(
             (e) => `
@@ -385,7 +385,7 @@
 
     try {
       await navigator.clipboard.writeText(text);
-      showToast("✅ 已复制到剪贴板！");
+      showToast("已复制到剪贴板！");
     } catch {
       // fallback
       const ta = document.createElement("textarea");
@@ -394,7 +394,7 @@
       ta.select();
       document.execCommand("copy");
       document.body.removeChild(ta);
-      showToast("✅ 已复制到剪贴板！");
+      showToast("已复制到剪贴板！");
     }
   });
 
@@ -412,7 +412,7 @@
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    showToast("✅ 已下载 .gitignore 文件！");
+    showToast("已下载 .gitignore 文件！");
   });
 
   // ---- 重置 ----
@@ -441,7 +441,7 @@
     renderSelectedTags();
     generateGitignore();
 
-    showToast("🔄 已重置所有选择");
+    showToast("已重置所有选择");
   });
 
   // ---- 键盘快捷键 ----

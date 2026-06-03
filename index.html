@@ -5,43 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>.gitignore 智能向导 | gitignore-wizard</title>
   <meta name="description" content="点选项目类型，一键生成 .gitignore，逐行解释为什么忽略。" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧙</text></svg>" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>..</text></svg>" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Header -->
   <header class="header">
     <div class="container">
-      <h1 class="logo">🧙 .gitignore <span class="logo-accent">Wizard</span></h1>
-      <p class="subtitle">点选你的项目类型 → 一键生成 .gitignore，<strong>逐行解释</strong>为什么忽略</p>
+      <h1 class="logo">.gitignore <span class="logo-accent">Wizard</span></h1>
+      <p class="subtitle">点选你的项目类型 -> 一键生成 .gitignore，<strong>逐行解释</strong>为什么忽略</p>
       <div class="badge-row">
-        <span class="badge">⚡ 纯前端</span>
-        <span class="badge">📦 离线可用</span>
-        <span class="badge">🔍 逐行解释</span>
+        <span class="badge">纯前端</span>
+        <span class="badge">离线可用</span>
+        <span class="badge">逐行解释</span>
       </div>
     </div>
   </header>
 
   <main class="container">
     <div class="layout">
-      <!-- 左侧：选择面板 -->
       <section class="panel panel-selection">
-        <h2>📋 选择项目类型</h2>
+        <h2>选择项目类型</h2>
 
-        <!-- 搜索 -->
         <div class="search-box">
-          <input type="text" id="searchInput" placeholder="🔍 搜索模板（如 Python、Node、Go）..." />
+          <input type="text" id="searchInput" placeholder="搜索模板（如 Python、Node、Go）..." />
         </div>
 
-        <!-- 分类标签 -->
         <div class="tabs" id="categoryTabs"></div>
 
-        <!-- 模板列表 -->
         <div class="template-list" id="templateList"></div>
 
-        <!-- 额外选项 -->
         <div class="extra-options">
-          <h3>➕ 额外忽略项</h3>
+          <h3>额外忽略项</h3>
           <label class="checkbox-row">
             <input type="checkbox" id="optEnv" />
             <span>.env / .env.local（环境变量文件）</span>
@@ -68,24 +62,22 @@
           </label>
         </div>
 
-        <!-- 已选模板 -->
         <div class="selected-section">
-          <h3>📌 已选择 <span id="selectedCount">0</span> 个模板</h3>
+          <h3>已选择 <span id="selectedCount">0</span> 个模板</h3>
           <div class="selected-tags" id="selectedTags"></div>
         </div>
       </section>
 
-      <!-- 右侧：结果面板 -->
       <section class="panel panel-result">
         <div class="result-header">
-          <h2>📄 生成的 .gitignore</h2>
+          <h2>生成的 .gitignore</h2>
           <div class="result-actions">
-            <button class="btn btn-copy" id="copyBtn" title="复制到剪贴板">📋 复制</button>
-            <button class="btn btn-download" id="downloadBtn" title="下载文件">⬇ 下载</button>
-            <button class="btn btn-reset" id="resetBtn" title="清空选择">🔄 重置</button>
+            <button class="btn btn-copy" id="copyBtn" title="复制到剪贴板">复制</button>
+            <button class="btn btn-download" id="downloadBtn" title="下载文件">下载</button>
+            <button class="btn btn-reset" id="resetBtn" title="清空选择">重置</button>
           </div>
         </div>
-        <div class="result-hint" id="resultHint">👈 在左侧选择项目模板，这里会实时生成 .gitignore</div>
+        <div class="result-hint" id="resultHint">在左侧选择项目模板，这里会实时生成 .gitignore</div>
         <div class="result-content" id="resultContent">
           <pre class="gitignore-output" id="gitignoreOutput"><code></code></pre>
           <div class="explanation" id="explanation"></div>
@@ -93,13 +85,11 @@
       </section>
     </div>
 
-    <!-- 页脚 -->
     <footer class="footer">
       <p>
-        🧙 <strong>.gitignore Wizard</strong> —
-        <a href="https://github.com/foweh/gitignore-wizard" target="_blank">GitHub</a> ·
-        数据来源 <a href="https://github.com/github/gitignore" target="_blank">github/gitignore</a> ·
-        用心 ⭐ 收藏
+        <strong>.gitignore Wizard</strong> --
+        <a href="https://github.com/foweh/gitignore-wizard" target="_blank">GitHub</a> |
+        数据来源 <a href="https://github.com/github/gitignore" target="_blank">github/gitignore</a>
       </p>
     </footer>
   </main>
