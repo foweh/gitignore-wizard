@@ -25,7 +25,7 @@
 
 ### 在线版（推荐）
 
-👉 **[使用 .gitignore Wizard](https://foweh.github.io/gitignore-wizard/)**（如果已部署 GitHub Pages）
+👉 **[🧙 在线使用 .gitignore Wizard](https://foweh.github.io/gitignore-wizard/)** — 浏览器打开即用，无需安装！
 
 ### 本地运行
 
